@@ -1,2 +1,8 @@
-const startText = 'Go!';
-alert( startText );
+$( document ).ready(function() {
+
+
+
+
+
+
+});
