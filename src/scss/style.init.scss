@@ -7,17 +7,19 @@
 $grid-columns: 60;
 $grid-gutter-width: 0;
 
+@import "template-variables";
+
 $grid-breakpoints: (
         // Extra small screen / phone
-        xs: 320px,
+        xs: $tmpl-screen-xs,
         // Small screen / phone
-        sm: 768px,
+        sm: $tmpl-screen-sm,
         // Medium screen / tablet
-        md: 1000px,
+        md: $tmpl-screen-md,
         // Large screen / desktop
-        lg: 1200px,
+        lg: $tmpl-screen-lg,
         // Extra large screen / wide desktop
-        xl: 1250px
+        xl: $tmpl-screen-xl
 );
 
 $container-max-widths: (
