@@ -1,0 +1,156 @@
+@import "template-variables";
+
+// Common styles
+
+@font-face {
+  font-family: 'CenturyGothic-Bold';
+  src: url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot);
+  src: url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot?#iefix&v=4.7.0) format("embedded-opentype"),
+  url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.woff) format("woff"),
+  url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+// UI - elements
+
+.button {
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-width: 213px;
+  min-height: 50px;
+  border-width: 0;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 7px 10px 5px 10px;
+  word-wrap: break-word;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button-bordered {
+  max-width: 200px;
+  box-shadow: inset 0 0 0 3px #14487D;
+  color: #14487D;
+  background-color: white;
+}
+
+.button-border-white {
+  background-color: transparent;
+  color: white;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.button-colored {
+  box-shadow: none;
+  color: white;
+  background-color: #34B6A7;
+  min-height: 60px;
+}
+
+.button:hover {
+  background-color: #14487D;
+  color: white;
+}
+
+.button-border-white:hover {
+  background-color: white;
+  color: #14487D;
+}
+
+@media (max-width: $tmpl-screen-lg) {
+
+  .button {
+    font-size: 11px;
+  }
+
+  .button-colored {
+    min-height: 50px;
+  }
+
+}
+
+// Socials
+
+.socials {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 245px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top-line-info__socials {
+  margin: 0 51px 0 0;
+}
+
+.socials-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-width: 22px;
+  min-height: 10px;
+  background-position: center;
+  background-size: 100% 100%;
+  margin: 0 0 0 38px;
+}
+
+.socials-item:first-child {
+  margin: 0 0 0 0;
+}
+
+.socials-item_img_facebook {
+  width: 10px;
+  height: 18px;
+  background-image: url( ../img/socials/фейсбук.png );
+}
+
+.socials-item_img_vk {
+  width: 21px;
+  height: 12px;
+  background-image: url( ../img/socials/вк.png );
+}
+
+.socials-item_img_instagram {
+  width: 18px;
+  height: 18px;
+  background-image: url( ../img/socials/инстаграм.png );
+}
+
+.socials-item_img_youtube {
+  width: 16px;
+  height: 20px;
+  background-image: url( ../img/socials/ютуб.png );
+}
+
+.socials-item_img_twitter {
+  width: 24px;
+  height: 17px;
+  background-image: url( ../img/socials/твиттер.png );
+}

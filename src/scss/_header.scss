@@ -1,0 +1,240 @@
+@import "template-variables";
+
+// Header
+
+.header {
+  position: relative;
+  padding: 40px 0 0 0;
+}
+
+.header-top-line {
+  position: relative;
+  margin: 0 0 90px 0;
+}
+
+.header-top-line-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-top-line-info__info-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 60px 0 0;
+  font-size: 13px;
+  color: #14487D;
+}
+
+
+.header-top-line-info__header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-button {
+  width: 20px;
+  height: 20px;
+  background-image: url( '../img/search.png' );
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.language-switcher {
+  cursor: pointer;
+}
+
+.mobile-menu-button-and-logo {
+  display: none;
+}
+
+
+
+
+
+
+// Logo
+
+.header-logo-and-main-menu {
+  display: flex;
+  width: 100%;
+  min-height: 78px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0 0 0 480px;
+}
+
+.header-logo {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-logo__img-wrap {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.header-logo__img-main,
+.header-logo__img-tagline {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.header-logo__img-main {
+  max-width: 171px;
+  margin: 0 30px 0 0;
+}
+
+
+// Header menu
+
+.header-main-menu {
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  // .header-main-menu__root-menu
+
+  ul.header-main-menu__root-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: -16px -12px 0 0;
+    padding: 0;
+
+    & > li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 16px 0 0 0;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      padding: 0 12px;
+
+      a {
+        display: block;
+        position: relative;
+        padding: 25px 0 0 0;
+        font-family: 'Roboto';
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #A7B7C5;
+      }
+
+      &:hover a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 8px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/menu-item-hover-bg.png");
+        background-repeat: repeat-x;
+      }
+
+      &:hover a {
+        color: #14487D;
+        text-decoration: none;
+      }
+
+    }
+
+    li {
+      position: relative;
+      display: block;
+      list-style-type: none;
+    }
+
+    li>ul.header-main-menu__sub-menu {
+      display: none;
+      position: absolute;
+      width: 280px;
+      top: calc(100% + 25px);
+      left: 12px;
+      background-color: #14487D;
+      color: white;
+      margin: 0;
+      padding: 20px 0;
+      z-index: 3;
+    }
+
+    li>ul.header-main-menu__sub-menu:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      top: -35px;
+      left: 0;
+    }
+
+    li:last-child>ul.header-main-menu__sub-menu {
+      right: 12px;
+      left: auto;
+    }
+
+    li:hover>ul {
+      display: block;
+    }
+
+    li>ul.header-main-menu__sub-menu li {
+      padding: 0;
+    }
+
+    li>ul.header-main-menu__sub-menu li a {
+      display: block;
+      padding: 12px 40px;
+      color: white;
+      font-weight: normal;
+      text-decoration: none;
+      text-transform: none;
+      text-align: left;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    li>ul.header-main-menu__sub-menu li:hover a {
+      background-color: #1B60A5;
+    }
+
+
+  }
+
+  ul.header-main-menu__root-menu {
+
+  }
+
+}
+
+
+
+
+
+
+

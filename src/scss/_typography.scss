@@ -1,0 +1,133 @@
+@import "template-variables";
+
+// Typography
+
+h1 {
+  font-family: 'Roboto';
+  color: #14487D;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Roboto';
+  color: #14487D;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.text {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #4B6076;
+}
+
+.text-small {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #4B6076;
+}
+
+.text-small-two {
+  font-family: "Arial";
+  color: #A7B7C5;
+  font-size: 12px;
+}
+
+.text-big {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 30px;
+  color: #14487D;
+}
+
+.text-big-two {
+  font-family: 'CenturyGothic-Bold';
+  font-size: 60px;
+  color: #14487D;
+}
+
+@media (max-width: $tmpl-screen-lg) {
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .text-small {
+    font-size: 14px;
+  }
+
+  .text-big {
+    font-size: 20px;
+  }
+
+  .text-big-two {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width: $tmpl-screen-md) {
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .text-small-two {
+    font-size: 11px;
+  }
+
+  .text-big {
+    font-size: 18px;
+  }
+
+  .text-big-two {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: $tmpl-screen-sm) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .text-small-two {
+    font-size: 11px;
+  }
+
+  .text-big {
+    font-size: 16px;
+  }
+
+  .text-big-two {
+    font-size: 25px;
+  }
+
+}
