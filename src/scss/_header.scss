@@ -56,10 +56,6 @@
 }
 
 
-
-
-
-
 // Logo
 
 .header-logo-and-main-menu {
@@ -72,6 +68,10 @@
   justify-content: flex-end;
   position: relative;
   padding: 0 0 0 480px;
+}
+
+.header-main-menu-mobile-info {
+  display: none;
 }
 
 .header-logo {
@@ -101,6 +101,61 @@
   max-width: 171px;
   margin: 0 30px 0 0;
 }
+
+.header-logo-mobile {
+  display: inline-block;
+  vertical-align: top;
+  width: 68px;
+}
+
+.header-logo-mobile__img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.mobile-menu-button-and-logo {
+
+  .hamburger {
+    padding: 8px 0 0 0;
+  }
+
+  .hamburger:hover {
+    opacity: 1;
+  }
+
+  .hamburger-box {
+    width: 36px;
+    height: 17px;
+    margin: 0 0 0 -6px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 16px;
+    height: 3px;
+    background-color: #14487D;
+  }
+
+  .hamburger--slider .hamburger-inner::before {
+    top: 12px;
+  }
+
+  .hamburger--slider .hamburger-inner::after {
+    top: 6px;
+  }
+
+  .hamburger--slider.is-active .hamburger-inner {
+    transform: translate3d(0, 7px, 0) rotate(45deg);
+  }
+
+  .hamburger--slider.is-active .hamburger-inner::after {
+    transform: translate3d(0, -6px, 0) rotate(-90deg);
+  }
+
+}
+
 
 
 // Header menu

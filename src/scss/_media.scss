@@ -164,14 +164,11 @@
 
   .header-top-line-info {
     display: block;
+    padding: 15px 20px;
   }
 
   .hidden-on-mobile {
     display: none !important;
-  }
-
-  .container {
-    padding: 0 20px;
   }
 
   .mobile-menu-button-and-logo {
@@ -181,17 +178,33 @@
   .header-contacts__search-and-switcher {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 22px;
+    right: 20px;
+  }
+
+  .header-top-line {
+    margin: 0;
   }
 
   .header-top-line-info__header-contacts {
     margin: 0;
+    display: none;
   }
 
-  //.header-logo-and-main-menu {
-  //  padding: 0;
-  //}
+  .header-logo-and-main-menu {
+    padding: 34px 20px;
+    background-color: #14487D;
+    text-align: left;
+  }
+
+  .header-main-menu {
+    display: block;
+    width: 100%;
+  }
+
+  .header-main-menu-mobile-info {
+    display: block;
+  }
 
 }
 
