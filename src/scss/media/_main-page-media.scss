@@ -1,0 +1,53 @@
+@import "../template-variables";
+
+@media (max-width: $tmpl-screen-lg) {
+
+  .main-page-full-screen-block {
+    min-height: 300px;
+    padding-top: 195px;
+  }
+
+  .main-page-full-screen-info__date {
+    line-height: 35px;
+
+    .text-big {
+      font-size: 16px;
+    }
+  }
+
+  .main-page-full-screen-info__event {
+    line-height: 38px;
+  }
+
+  .main-page-full-screen-info__decor-line {
+    height: calc(100% - 8px);
+    margin: 0 50px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .main-page-full-screen-info__decor-line {
+    left: 8px;
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 769px) {
+  .main-page-full-screen-info__decor-line {
+    left: 8px;
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .main-page-full-screen-block {
+    padding-bottom: 30px;
+  }
+
+  .main-page-full-screen-info__decor-line {
+    left: 19px;
+    margin: 0 35px;
+  }
+}

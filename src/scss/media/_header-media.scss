@@ -1,4 +1,4 @@
-@import "template-variables";
+@import "../template-variables";
 
 // Header
 
@@ -65,6 +65,7 @@
 
   .header-logo-and-main-menu {
     min-height: 60px;
+    z-index: 10;
   }
 
   .header-top-line {
@@ -189,6 +190,7 @@
 
   .header {
     padding: 0;
+    margin: 0;
   }
 
   .header-top-line-info {
@@ -222,6 +224,8 @@
 
   .header-logo-and-main-menu {
     display: none;
+    position: absolute;
+    top: 100%;
     padding: 34px 0;
     background-color: #14487D;
     text-align: left;
@@ -324,11 +328,15 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: $tmpl-screen-sm) {
 
   .header-logo-and-main-menu {
     display: flex !important;
   }
+
+}
+
+@media (min-width: 767px) {
 
   .header-main-menu ul.header-main-menu__root-menu li > ul {
     display: none !important;

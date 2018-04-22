@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   outline: 0;
+  margin: 0 0 500px 0;
 }
 
 ul, li {
@@ -25,8 +26,12 @@ ul, li {
   margin: 0;
 }
 
-.container {
-  padding: 0 20px;
+@media (max-width: $tmpl-screen-sm) {
+
+  .container {
+    padding: 0 20px;
+  }
+
 }
 
 .container_padding_no {
