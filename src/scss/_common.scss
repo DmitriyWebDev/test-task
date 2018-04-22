@@ -105,6 +105,10 @@ ul, li {
 
 }
 
+.button_width_full {
+  max-width: 100%;
+}
+
 // Socials
 
 .socials {
@@ -166,4 +170,31 @@ ul, li {
   width: 24px;
   height: 17px;
   background-image: url( ../img/socials/твиттер.png );
+}
+
+// Breadcrumbs
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+
+.breadcrumbs__item:after {
+  content: '/';
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 13px 0 10px;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+
+.breadcrumbs__item:hover {
+  text-decoration: none;
+  color: #A7B7C5;
 }

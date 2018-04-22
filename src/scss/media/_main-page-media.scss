@@ -31,6 +31,7 @@
     left: 8px;
     margin: 0 50px;
   }
+
 }
 
 @media (max-width: 769px) {
@@ -38,6 +39,31 @@
     left: 8px;
     margin: 0 40px;
   }
+
+  // General info
+  .general-info-web-other-info__button {
+    max-width: 334px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  // General info
+  .general-info-web-other-info__item {
+    flex-wrap: wrap;
+  }
+
+  .general-info-web-other-info__item-title {
+    width: 100%;
+  }
+
+  .general-info-web-other-info__item-value {
+    padding: 0;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -50,4 +76,11 @@
     left: 19px;
     margin: 0 35px;
   }
+
+  // General info
+  .general-info-web-other-info__button {
+    max-width: 241px;
+    width: 100%;
+  }
+
 }
