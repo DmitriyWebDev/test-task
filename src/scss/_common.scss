@@ -198,3 +198,88 @@ ul, li {
   text-decoration: none;
   color: #A7B7C5;
 }
+
+@media (max-width: 1001px) {
+  .breadcrumbs {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    margin: 0 0 35px 0;
+  }
+}
+
+
+// Visual editor content
+
+.user-content {
+
+  h2 {
+    display: block;
+    margin: 0 0 40px 0;
+  }
+
+  p, ul {
+    display: block;
+    margin: 0 0 40px 0;
+    font-size: 16px;
+    color: #4B6076;
+  }
+
+  ul {
+    list-style-position: inside;
+  }
+
+  ul.list-custom-circle {
+
+    li {
+      display: block;
+      list-style-type: none;
+      position: relative;
+      padding-left: 60px;
+      margin: 0 0 15px 0;
+    }
+
+    @media (max-width: 480px) {
+
+      li {
+        padding-left: 35px;
+      }
+    }
+
+    li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background-image: url("../img/list-decor-circle.png");
+      background-size: 100% 100%;
+    }
+
+  }
+
+  @media (max-width: 769px) {
+
+    h2, p, ul {
+      margin: 0 0 30px 0;
+    }
+
+    p, ul {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    p, ul {
+      font-size: 14px;
+    }
+
+  }
+
+}
+
