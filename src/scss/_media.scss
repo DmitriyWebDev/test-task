@@ -192,7 +192,8 @@
   }
 
   .header-logo-and-main-menu {
-    padding: 34px 20px;
+    display: none;
+    padding: 34px 0;
     background-color: #14487D;
     text-align: left;
   }
@@ -206,8 +207,96 @@
     display: block;
   }
 
+  // Mobile menu view
+
+  .header-main-menu ul.header-main-menu__root-menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .header-main-menu ul.header-main-menu__root-menu > li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu > li a {
+    display: block;
+    position: relative;
+    padding: 20px 40px 20px 20px;
+    text-align: left;
+    color: white;
+    border-top: 1px solid #1B60A5;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu > li:hover a {
+    color: white;
+    text-decoration: none;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li > ul.header-main-menu__sub-menu {
+    display: none;
+    position: static;
+    width: 100%;
+    background-color: #1B60A5;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li:hover > ul {
+    display: none;
+  }
+
+  .header-main-menu ul.header-main-menu__sub-menu li a {
+    font-size: 12px;
+    position: relative;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li.has-sub-menu>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    right: 30px;
+    top: 50%;
+    margin: -6px 0 0 0;
+    transform: rotate(45deg);
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li.has-sub-menu.sub-menu-is-open>a {
+    color: #A7B7C5;
+
+    &:after {
+      transform: rotate(-135deg);
+      margin: -3px 0 0 0;
+    }
+
+  }
+
 }
 
+@media (min-width: 767px) {
+
+  .header-logo-and-main-menu {
+    display: flex !important;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li > ul {
+    display: none !important;
+  }
+
+  .header-main-menu ul.header-main-menu__root-menu li:hover > ul {
+    display: block !important;
+  }
+
+}
 
 
 // END Header

@@ -72,6 +72,23 @@
 
 .header-main-menu-mobile-info {
   display: none;
+  padding: 0 20px;
+}
+
+.header-main-menu-mobile-info-item {
+  margin: 0 0 20px 0;
+  color: white;
+  display: block;
+
+  a {
+    color: white;
+    font-size: 12px;
+  }
+
+}
+
+.header-main-menu-mobile_position_before-email {
+  margin-bottom: 10px;
 }
 
 .header-logo {
@@ -268,6 +285,7 @@
       text-decoration: none;
       text-transform: none;
       text-align: left;
+      font-family: 'Arial';
 
       &:before {
         display: none;
