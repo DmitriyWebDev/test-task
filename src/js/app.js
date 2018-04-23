@@ -1,4 +1,6 @@
 import {isMobileView, goToUrl} from './common-functions'
+import slick from '../../libs/slick-carousel/slick/slick.min';
+
 
 $( document ).ready(function() {
 
@@ -124,6 +126,116 @@ $( document ).ready(function() {
     });
 
   })($);
+
+  /** Sliders */
+
+  (function ($) {
+
+    const sliderModalWrapSelector = '.js-slider-modal';
+    const sliderModalWrap = $( sliderModalWrapSelector );
+
+    $( '.js-slider-nav .slider-nav__slide' ).click(function () {
+
+      // setTimeout(function () {
+      //   $(window).trigger('resize');
+      // }, 0)
+      //
+      // setTimeout(function () {
+      //   $(window).trigger('resize');
+      // }, 100)
+      //
+      // setTimeout(function () {
+      //   $(window).trigger('resize');
+      // }, 200)
+      //
+      // setTimeout(function () {
+      //   $(window).trigger('resize');
+      // }, 300)
+
+      $('#modal-window').fadeIn();
+      $( 'body' ).css({'overflow' : 'hidden'});
+
+      $('.js-slider-for').slick("setPosition", 0);
+      $('.js-slider-for').resize();
+      // $( sliderModalWrapSelector + ' ' + 'button.slick-next' ).click();
+
+
+
+    });
+
+    $( '.js-slider-modal__close-button' ).click(function () {
+      $('#modal-window').fadeOut();
+      $( 'body' ).css({'overflow-y' : 'visible'});
+    });
+
+    $( '.js-prev-slide-btn' ).on( 'click', function () {
+      $( sliderModalWrapSelector + ' ' + 'button.slick-prev' ).click();
+    });
+
+    $( '.js-next-slide-btn' ).on( 'click', function () {
+      $( sliderModalWrapSelector + ' ' + 'button.slick-next' ).click();
+    });
+
+    const allSlidesCount = countSlides();
+    $( sliderModalWrapSelector + ' ' + '.js-slider-modal__slides-count' ).text( allSlidesCount );
+
+
+    $('.js-slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+      const nextSlideNumber = Number(nextSlide) + 1;
+      $( sliderModalWrapSelector + ' ' + '.js-slider-modal__current-slide-numb' ).text( nextSlideNumber );
+
+    });
+
+
+    $('.js-slider-for').slick({
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.js-slider-nav'
+    });
+
+    $('.js-slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true,
+      draggable: false,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    function countSlides() {
+
+      const slidesCount = $( sliderModalWrapSelector + ' ' + '.js-slider-for' ).find( '.slider-modal__slide' ).length;
+      return slidesCount;
+
+    }
+
+  })($);
+
+
 
 
 

@@ -42,6 +42,9 @@ $hamburger-types: (
 
 @import "~hamburgers/_sass/hamburgers/hamburgers";
 
+// Modal window Magnific popup styles
+@import "~magnific-popup/src/css/main.scss";
+
 /** END Include Libs */
 
 @import "common";
