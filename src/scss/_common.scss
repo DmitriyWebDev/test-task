@@ -3,6 +3,26 @@
 // Common styles
 
 @font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/RobotoRegular/RobotoRegular.eot);
+  src: url(./fonts/RobotoRegular/RobotoRegular.eot?#iefix&v=4.7.0) format("embedded-opentype"),
+  url(./fonts/RobotoRegular/RobotoRegular.woff) format("woff"),
+  url(./fonts/RobotoRegular/RobotoRegular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(./fonts/RobotoBold/RobotoBold.eot);
+  src: url(./fonts/RobotoBold/RobotoBold.eot?#iefix&v=4.7.0) format("embedded-opentype"),
+  url(./fonts/RobotoBold/RobotoBold.woff) format("woff"),
+  url(./fonts/RobotoBold/RobotoBold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CenturyGothic-Bold';
   src: url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot);
   src: url(./fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot?#iefix&v=4.7.0) format("embedded-opentype"),
@@ -40,7 +60,7 @@ ul, li {
 // UI - elements
 
 .button {
-  font-weight: 700;
+  font-family: 'RobotoBold';
   display: inline-block;
   vertical-align: top;
   width: 100%;
