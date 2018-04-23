@@ -1,0 +1,156 @@
+@import "../template-variables";
+
+@media (max-width: $tmpl-screen-xl) {
+
+  .footer-logo-wrap__img {
+    width: 150px;
+  }
+
+  .footer__button {
+    min-width: 100px;
+    width: 155px;
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+  .footer-contact-info {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact-info-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .footer-contact-info-wrap__inner {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .footer__socials .socials-item {
+    margin: 0;
+  }
+
+  .footer__socials {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-contact-info__phone {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer-contact-info__email {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer__contact-and-button {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact-info {
+    width: 100%;
+  }
+
+  .footer__button {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: $tmpl-screen-lg) {
+
+  .footer-logo-wrap__img {
+    width: 135px;
+  }
+
+}
+
+
+@media (max-width: $tmpl-screen-md) {
+
+  .footer-logo-wrap__img {
+    width: 110px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .footer-logo-wrap {
+    margin-bottom: 50px;
+  }
+
+  .footer-logo-wrap__img {
+    min-width: 70px;
+  }
+
+  .footer-logo-wrap__text {
+    display: block;
+    padding: 0 0 0 25px;
+    font-size: 14px;
+    margin-top: -4px;
+  }
+
+  .footer-menu {
+    width: 180px;
+  }
+
+  .footer-bottom-line__item {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom-line__last-item {
+    text-align: left;
+  }
+
+  .footer-contact-info-wrap__inner {
+    max-width: 100%;
+  }
+
+  .footer__socials {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 215px;
+
+  }
+
+  .footer__socials .socials-item {
+    margin: 0 0 0 20px;
+    vertical-align: middle;
+  }
+
+  .footer__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240px;
+    min-width: 240px;
+  }
+
+  .footer-menus-wrap {
+    margin-bottom: 40px;
+  }
+
+  .footer-contact-info {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-contact-info__phone,
+  .footer-contact-info__email {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    padding: 0 5px;
+  }
+
+}
