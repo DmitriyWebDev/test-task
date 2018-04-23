@@ -130,3 +130,20 @@
 .footer-bottom-line__last-item {
   text-align: right;
 }
+
+// Scroll top button
+.footer__inner {
+  position: relative;
+}
+
+.footer-scroll-top-button {
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  right: -140px;
+  top: (-40px - 80px);
+  background-image: url("../img/наверх.png");
+  background-size: 100% 100%;
+  background-position: center;
+  cursor: pointer;
+}

@@ -4,6 +4,15 @@ import slick from '../../libs/slick-carousel/slick/slick.min';
 
 $( document ).ready(function() {
 
+  /** Scrol to top button */
+
+  $( '.js-scroll-to-top' ).click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+
   /** Mobile menu button */
 
   const headerMobileMenuToggleButton = $( ".js-hamburger" );
@@ -201,6 +210,7 @@ $( document ).ready(function() {
       slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.js-slider-for',
+      arrows: false,
       dots: true,
       centerMode: true,
       focusOnSelect: true,

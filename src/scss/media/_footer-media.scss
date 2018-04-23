@@ -1,5 +1,11 @@
 @import "../template-variables";
 
+@media (max-width: 1500px) {
+  .footer-scroll-top-button {
+    right: 0;
+  }
+}
+
 @media (max-width: $tmpl-screen-xl) {
 
   .footer-logo-wrap__img {
@@ -151,6 +157,10 @@
     vertical-align: top;
     width: auto;
     padding: 0 5px;
+  }
+
+  .footer-scroll-top-button {
+    right: 20px;
   }
 
 }
