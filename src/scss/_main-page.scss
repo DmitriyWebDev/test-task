@@ -164,7 +164,6 @@
 
 .slider-modal {
   display: block;
-  border: 1px solid black;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -263,11 +262,11 @@
 }
 
 .slider-modal-button-prev {
-  left: 0;
+  left: 4px;
 }
 
 .slider-modal-button-next {
-  right: 0;
+  right: 4px;
 }
 
 // Slider Nav
