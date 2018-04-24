@@ -201,15 +201,15 @@ $( document ).ready(function() {
       infinite: true,
       responsive: [
         {
-          breakpoint: 1340,
+          breakpoint: 1500,
           settings: {
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 2
+            slidesToShow: 3
           }
         },
         {
-          breakpoint: 1100,
+          breakpoint: 999,
           settings: {
             centerMode: true,
             centerPadding: '30px',
@@ -217,7 +217,7 @@ $( document ).ready(function() {
           }
         },
         {
-          breakpoint: 890,
+          breakpoint: 767,
           settings: {
             centerMode: true,
             centerPadding: '20px',

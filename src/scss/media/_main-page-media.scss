@@ -77,6 +77,18 @@
 
 }
 
+@media (max-width: 1199px) {
+
+  // Slider nav
+
+  .slider-nav__slide-inner {
+    max-width: 300px;
+    height: 300px;
+    line-height: 300px;
+    padding: 8px;
+  }
+
+}
 
 
 
@@ -173,6 +185,15 @@
   .main-page-bottom-info {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+
+  // Slider nav
+
+  .slider-nav__slide-inner {
+    max-width: 280px;
+    height: 280px;
+    line-height: 280px;
+    padding: 5px;
   }
 
 }
