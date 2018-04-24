@@ -88,23 +88,19 @@ $( document ).ready(function() {
 
     const searchFrom = $( '#top-search-form' );
 
+    $(document).click( function(event){
+      if( $(event.target).closest(searchFrom).length)
+        return;
+      jQuery(searchFrom).css({ 'display' : 'none' });
+      event.stopPropagation();
+    });
+
     $( '.js-show-top-search' ).on( 'click', function () {
 
       setTimeout( () => {
         searchFrom.css({ 'display' : 'block' });
       }, 10 );
 
-    });
-
-    $(document).on('click', function(event) {
-
-      if ( !$(event.target).closest('#top-search-form').length ) {
-
-        if( searchFrom.css('display') === 'block' ) {
-          searchFrom.css({ 'display' : 'none' });
-        }
-
-      }
     });
 
     // Cross browser placeholder color
