@@ -145,30 +145,12 @@ $( document ).ready(function() {
 
     $( '.js-slider-nav .slider-nav__slide' ).click(function () {
 
-      // setTimeout(function () {
-      //   $(window).trigger('resize');
-      // }, 0)
-      //
-      // setTimeout(function () {
-      //   $(window).trigger('resize');
-      // }, 100)
-      //
-      // setTimeout(function () {
-      //   $(window).trigger('resize');
-      // }, 200)
-      //
-      // setTimeout(function () {
-      //   $(window).trigger('resize');
-      // }, 300)
-
       $('#modal-window').fadeIn();
       $( 'body' ).css({'overflow' : 'hidden'});
 
+      // Init slick slider in modal window
       $('.js-slider-for').slick("setPosition", 0);
       $('.js-slider-for').resize();
-      // $( sliderModalWrapSelector + ' ' + 'button.slick-next' ).click();
-
-
 
     });
 
@@ -186,7 +168,7 @@ $( document ).ready(function() {
     });
 
     const allSlidesCount = countSlides();
-    $( sliderModalWrapSelector + ' ' + '.js-slider-modal__slides-count' ).text( allSlidesCount );
+    $( '.js-slider-modal__slides-count' ).text( allSlidesCount );
 
 
     $('.js-slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -207,29 +189,38 @@ $( document ).ready(function() {
     });
 
     $('.js-slider-nav').slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
+      centerPadding: '50px',
       slidesToScroll: 1,
       asNavFor: '.js-slider-for',
       arrows: false,
-      dots: true,
+      dots: false,
       centerMode: true,
       focusOnSelect: true,
       draggable: false,
       infinite: true,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1340,
           settings: {
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 2
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 1100,
           settings: {
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '30px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            centerMode: true,
+            centerPadding: '20px',
             slidesToShow: 1
           }
         }
