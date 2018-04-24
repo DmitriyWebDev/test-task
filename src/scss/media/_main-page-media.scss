@@ -199,13 +199,24 @@
   // Slider Modal
 
   .slider-modal {
+    max-width: 300px;
+    width: 300px;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .slider-modal {
     padding: 120px 20px 0;
   }
 
   .slider-modal-buttons-wrap {
     position: relative;
     width: 111px;
-    margin: 0 auto 35px;
+    margin: 0 auto;
+    height: 70px;
   }
 
 }
